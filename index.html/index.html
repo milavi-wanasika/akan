@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAN NAMING</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>AKAN NAMING</h1>
+            <p>This is a system that uses your gender and your birthday to determine your Ghanaian cultural name</p>
+        </div>       
+        <div class="card">
+            <div class="card-body">
+                <p> <strong> Enter the following details below: </strong></p>
+            </div>
+            <p>,<strong>Gender:</strong></p>
+            <form action="/action_page.php">
+                <input type="checkbox" id="gender1" name="gender1" value="Male">
+                <label for="gender1"> Male</label><br>
+                <input type="checkbox" id="gender2" name="gender2" value="Female">
+                <label for="gender2"> Female</label><br>
+                <label for="birthday"><strong>Birthday:</strong></label>
+                <input type="date" id="day" name="day">
+                <input type="submit" value="Submit">
+            </form>
