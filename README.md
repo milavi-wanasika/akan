@@ -8,7 +8,7 @@ this site has used
   .CSS
   this are the main languages used to come up with th site
   
- #the programmer
+ # the programmer
   Name:Milavi Wanasika
   Contact:
           Email:milavi.wanasika@yahoo.com
