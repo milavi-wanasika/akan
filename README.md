@@ -13,3 +13,6 @@ this site has used
   Contact:
           Email:milavi.wanasika@yahoo.com
           Phone:0707032988
+### License
+*{MIT}*
+Copyright (c) 2020 **MILAVI WANASIKA**
