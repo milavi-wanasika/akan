@@ -6,7 +6,6 @@
     <title>AKAN NAMING</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
 </head>
 <body>
     <div class="container">
@@ -16,19 +15,35 @@
         </div>       
         <div class="card">
             <div class="card-body">
-                <p> <strong> Enter the following details below: </strong></p>
-            </div>
-            <p><strong>Gender:</strong></p>
-            <form action="/action_page.php">
-                <input type="checkbox" id="gender1" name="gender1" value="Male">
-                <label for="gender1"> Male</label><br>
-                <input type="checkbox" id="gender2" name="gender2" value="Female">
-                <label for="gender2"> Female</label><br>
-                <label for="birthday"><strong>Birthday:</strong></label>
-                <input type="date" id="day" name="day">
-                <input type="submit" value="Submit">
-            </form>
-        </div>    
-     </div>
+                    <p> <strong> Enter the following details below: </strong></p>
+            
+                <p><strong>Gender:</strong></p>
+                <input type="checkbox" id="male" name="gender" value="Male" required>
+                    <label for="male"> Male</label><br>
+                    <input type="checkbox" id="female" name="gender" value="Female" required>
+                    <label for="female"> Female</label><br>
+                  <div>
+                    <br>
+                  </div>
+                <label><b>Year Born:</b></label>
+                <input type="number" placeholder="YYYY" name="year" id="year" min="1" minlength="4" maxlength="4" step="1" required>
+                  </div>
+                   <br>
+                  <div>
+                <label><b>Month Born:</b></label>
+                <input type="number" placeholder="MM" name="month" id="month" min="1950/1/1" max="12" step="1" required>
+                    </div>
+                    <br>
+                    <div>
+                    <label><b>Date your Born:</b></label>
+                    <input type="number" placeholder="DD" name="date" id="date" min="1950/1/1" max="31" step="1" required>
+                </div>    
+                <button type="submit"onclick= "getName()"
+                onsubmit="event.preventDefault()"
+                class="button">Click here to submit info</button>  
+            </div>    
+        </div>
+    </div>
+ <script src="js/scripts.js"></script
 </body>
 </html>        
