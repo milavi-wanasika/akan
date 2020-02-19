@@ -1,14 +1,14 @@
 function getName() {
     var year = parseInt(document.getElementById("year").value);
-    var day = parseInt(document.getElementById("date").value);
+    var day = parseInt(document.getElementById("day").value);
     var month = parseInt(document.getElementById("month").value);
-    var male = document.getElementById("gender1")
-    var female = document.getElementById("gender2");
+    var male = document.getElementById("male")
+    var female = document.getElementById("female");
     var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thuarsday", "Friday", "Saturday"];
     var maleNames = ["Kwasi", "Kwanwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames = ["Akosa", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var day = new Date(year + "/" + month + "/" +day);
-    var birthDay = day.getDay();
+    var date = new Date(year + "/" + month + "/" +day);
+    var birthDay = date.getDay();
 
     if (male.checked == false && female.checked == false) {
      alert("kindly identify your gender");
@@ -19,7 +19,6 @@ function getName() {
      if (month < 1 || month > 12 || month == 2 && day > 29){
     alert("kindly enter a valid month");
     }
-
      else if (day < 1 || day > 31) {
     alert("kindly enter a valid day")
     }

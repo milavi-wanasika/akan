@@ -6,6 +6,7 @@
     <title>AKAN NAMING</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
     <div class="container">
@@ -18,32 +19,33 @@
                     <p> <strong> Enter the following details below: </strong></p>
             
                 <p><strong>Gender:</strong></p>
-                <input type="checkbox" id="male" name="gender" value="Male" required>
-                    <label for="male"> Male</label><br>
-                    <input type="checkbox" id="female" name="gender" value="Female" required>
-                    <label for="female"> Female</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male"> Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female"> Female</label><br>
                   <div>
                     <br>
                   </div>
+                <input type="number" placeholder="YYYY" name="year" id="year" required>
                 <label><b>Year Born:</b></label>
-                <input type="number" placeholder="YYYY" name="year" id="year" min="1" minlength="4" maxlength="4" step="1" required>
                   </div>
                    <br>
                   <div>
+                <input type="number" placeholder="MM" name="month" id="month"required>
                 <label><b>Month Born:</b></label>
-                <input type="number" placeholder="MM" name="month" id="month" min="1950/1/1" max="12" step="1" required>
                     </div>
                     <br>
                     <div>
-                    <label><b>Date your Born:</b></label>
-                    <input type="number" placeholder="DD" name="date" id="date" min="1950/1/1" max="31" step="1" required>
-                </div>    
-                <button type="submit"onclick= "getName()"
-                onsubmit="event.preventDefault()"
-                class="button">Click here to submit info</button>  
+                <input type="number" placeholder="DD" name="date" id="day" required>
+                <label><b>Date your Born:</b></label>
+                        
+                  <button type="submit"onclick= "getName()"
+                   onsubmit="event.preventDefault()"
+                   class="button">Click here to submit info</button>  
+                    </div>   
             </div>    
         </div>
     </div>
- <script src="js/scripts.js"></script
+ <script src="scripts.js"></script>
 </body>
 </html>        
